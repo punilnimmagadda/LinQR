@@ -42,7 +42,7 @@ function generateQRCode () {
 
             qrcode.makeCode(elText.value);
 
-            setTimeout(function(){ $("#downloadQRImage").attr("href", $('#qrCode img').attr('src')).attr("download", "download.png"); }, 0);
+            setTimeout(function(){ $("#downloadQRImage").attr("href", typeof $("#qrCode img").attr("src") === "undefined" ? document.querySelector("#qrCode canvas").toDataURL() : $("#qrCode img").attr("src")).attr("download", "download.png"); }, 0);
 
             //show QR Code actions i.e., Download and Copy to Clipboard buttons 
             $("#qrCode, .qr-actions *").show();
