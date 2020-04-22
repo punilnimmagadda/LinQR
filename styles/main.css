@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f0f8ff; */
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #f0f8ff;
+    width: 100%;
+    padding: 30px;
+    flex-grow: 0;
+    box-shadow: 0px 0px 5px #f8f8ff;
+}
+.app-title, .app-sub-title {
+    text-align: center;
+    font-weight: 600;
+}
+main {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.qr-wrapper {
+    width: 100%;
+}
+#qrCode {
+    display: none;
+    width: 200;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.qr-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr-actions * {
+    display: none;
+    margin: 0 5px;
+}
+footer {
+    background-color: #f0f8ff;
+    padding: 20px;
+    width: 100%;
+    flex-grow: 0;
+    box-shadow: 0px 0px 4px #f8f8ff;
+}
+.app-developed-by {
+    text-align: center;
+}
+#sendEmail {
+    color: dodgerblue;
+    text-decoration: none;
+}
